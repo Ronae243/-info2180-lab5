@@ -18,12 +18,12 @@ function suphero(){
 
     var userent = document.querySelector("input").value;
     var sanUser = sanitizeString(userent);
-    //var strResult = document.getElementById("result");
+    var strResult = document.getElementById("result");
     var http = new XMLHttpRequest();
     var url = "http://localhost:8080/-info2180-lab5/world.php?country=";
     http.onreadystatechange = function(){
         if(http.readyState == XMLHttpRequest.DONE && http.status ==200){
-               alert(http.responseText)
+               strResult.innerHTML = http.responseText;
         }
     }
     http.open('GET', url+sanUser, true);
