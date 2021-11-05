@@ -10,7 +10,7 @@ function searchbtn(){
 }
 
 function lookup_cities(){
-    var subbutton = document.getElementById("lookup cities");
+    var subbutton = document.getElementById("lookup_cities");
     console.log(subbutton);
     subbutton.addEventListener("click", function(event) {
         cities();
@@ -39,12 +39,6 @@ function country(){
     http.open('GET', url+sanUser, true);
     http.send();  
 }
-
-
-window.addEventListener("DOMContentLoaded",function(){
-    searchbtn();
-    lookup_cities();
-})
 
 function cities(){
 
