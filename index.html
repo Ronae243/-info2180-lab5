@@ -12,18 +12,26 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>World Database Lookup</h1>
-		</header>
-
-		<main>
-			<div id="controls">
-				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
+		<header class = "box1">
+			
+			<div class = "container">
+				<img src="undraw_the_world_is_mine_nb0e (1).png" alt="grl holding globe"/>
+				<h1>World Database Lookup</h1>
 			</div>
 			
-			<div id="result">
+		</header>
+
+		<main class = "box2">
+			<div id="controls" class="container">
+				<input id="country" type="search" name="country" placeholder="Enter country name" />
+				<div class="flexbox">
+					<button id="lookup">Lookup Country</button>
+				    <button id="lookup_cities">Lookup Cities</button>
+				</div>
+				
+			</div>
+			
+			<div id="result" class="container">
 				<!-- countries will appear here -->
 			</div>
 		</main>
